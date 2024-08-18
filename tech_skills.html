@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Skills</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <!--  <a class="navbar-brand" href="#">My Website</a>-->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Summary</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/tech_skills">Tech Skills</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/experience">Experience</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="mb-4 text-info">Technical Skills:</h2>
+        <div class="row">
+            <div class="col-12">
+                <!-- Technical Skills Table -->
+                <table class="table table-striped" style="font-size: 1.2em;">
+    <thead style="background-color: #007bff; color: #ffffff;">
+                        <tr>
+                            <th>Skill Category</th>
+                            <th>Technologies/Tools</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                        <tr>
+                            <td><strong>Version Control</strong></td>
+                            <td>Azure DevOps / Github</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cloud</strong></td>
+                            <td>AWS</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Infrastructure Provisioning Tools</strong></td>
+                            <td>Ansible</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Configuration Management Tools</strong></td>
+                            <td>Terraform</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Containerization</strong></td>
+                            <td>Docker</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Container Orchestration</strong></td>
+                            <td>Kubernetes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monitoring</strong></td>
+                            <td>Prometheus</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CICD</strong></td>
+                            <td>Jenkins</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Programming/Scripting</strong></td>
+                            <td>Python, PowerShell</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Virtualization</strong></td>
+                            <td>Vmware, HyperV</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Operating Systems</strong></td>
+                            <td>Windows, Linux</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Other</strong></td>
+                            <td>Networking, Active Directory, Firewalls (Sonicwall),<br>Windows Servers, Exchange Server, Security (VPN, SSL, etc.), NAS</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+        <!-- Soft Skills-->
+        <div class="container-fluid mt-4">
+    <h2 class="mb-4 text-info">Methodologies and Soft Skills:</h2>
+    <div class="row">
+        <div class="col-md-20">
+            <div class="card mb-4">
+                <div class="card-body" style="font-size: 1.2em;">
+                       <!-- <h5 class="card-title">Python</h5>-->
+                        <p class="card-text">* Experienced in Agile and Scrum, proficient in facilitating sprints, managing backlogs, and
+ensuring iterative project delivery.</p>
+</p>* Highly proficient in multitasking and project management, adept at managing multiple projects concurrently.</p>
+</p>* Strong communicator, skilled in engaging with stakeholders across all organizational levels.</p>
+</p>* Expert in technical writing and documentation, with experience drafting policies, SOPs,
+requirements, and post-mortems.</p>
+</p>* Dedicated to continuous improvement, consistently seeking to optimize workflows and
+processes.</p>
+</p>* Thrives under pressure, consistently delivering high-quality results within tight deadlines</p>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

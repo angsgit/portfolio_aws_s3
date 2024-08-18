@@ -1,0 +1,13 @@
+body {
+    padding-top: 56px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.container {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+}
