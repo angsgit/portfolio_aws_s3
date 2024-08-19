@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angad's Portfolio</title>
     <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <style>
-        /* Ensure the wrapper aligns all the way to the left */
         .text-wrapper {
-            border: 1px solid #ddd; /* Border around the text */
-            border-radius: 5px; /* Rounded corners */
-            padding: 15px; /* Padding inside the border */
-            background-color: #f8f9fa; /* Light background color for contrast */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-            display: block; /* Ensures the wrapper takes the width of its content */
-            width: auto; /* Shrink to fit the content */
-            margin: 0; /* Remove all margins */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem; /* Add margin between sections */
         }
 
         .text-black {
@@ -23,38 +22,46 @@
         }
 
         .text-large {
-            font-size: 1.4em; /* Larger font size */
+            font-size: 1.4em;
         }
 
         .text-left {
-            margin: 0; /* Remove any margins */
-            text-align: left; /* Align text to the left */
+            text-align: left;
+        }
+
+        /* Responsive design for mobile devices */
+        @media (max-width: 768px) {
+            .text-large {
+                font-size: 1.2em; /* Slightly smaller text on small screens */
+            }
         }
     </style>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Summary</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tech_skills.html">Tech Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="experience.html">Experience</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-      <h1 class="mb-4 text-info" style="text-align: center;">Experience</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Summary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tech_skills.html">Tech Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-       <div class="container mt-4">
-        <!-- Add extra left padding to the container if needed -->
+    <h1 class="mb-4 text-info text-center">Experience</h1>
+
+    <div class="container mt-4">
+        <!-- First Experience Section -->
         <div class="text-wrapper">
             <h4 class="text-black text-left">Smart Start Ltd</h4>
             <p class="text-large text-left">IT Consultant | 2023-2024</p>
@@ -74,27 +81,7 @@
             <p class="text-left">• Provide end-user training and support, empowering staff to effectively utilize IT resources and tools.</p>
         </div>
 
-        <div class="container mt-4 p-0">
         <!-- Second Experience Section -->
-        <div class="text-wrapper">
-            <h4 class="text-black text-left">Microsoft Ireland</h4>
-            <p class="text-large text-left">Service Reliability Engineer | 2015 - 2022</p>
-            <p class="text-left">• Team Leadership: Led a team of engineers in providing support to Fortune 500 companies, focusing on incident resolution and root cause analysis to ensure high service reliability.</p>
-            <p class="text-left">• Scrum Master: Facilitated Agile practices as Scrum Master, enhancing teamwork and collaboration within the engineering team to optimize project delivery.</p>
-            <p class="text-left">• Post-Mortem Analysis: Conducted in-depth post-mortem analyses of long-standing issues, extracting actionable insights to drive continuous improvement and prevent recurrence.</p>
-            <p class="text-left">• Advanced Troubleshooting: Performed advanced debugging and crash dump analysis, addressing complex network and web-related issues with precision.</p>
-            <p class="text-left">• Code Reviews: Managed pull requests and conducted thorough code reviews, ensuring code quality and adherence to best practices.</p>
-            <p class="text-left">• Service Reviews: Directed weekly and monthly service reviews, promoting accountability and identifying opportunities for performance improvements and efficiency gains.</p>
-            <p class="text-left">• Automation: Automated recurring tasks and workflows through programming and scripting, significantly increasing operational efficiency and reducing manual efforts.</p>
-            <p class="text-left">• Technical Communication: Authored detailed technical write-ups and documentation, enhancing knowledge sharing and transparency among senior management and team members.</p>
-            <p class="text-left">• Trend Analysis: Analyzed emerging trends and recurring escalation scenarios, initiating engineering solutions to mitigate workflow disruptions and improve service stability.</p>
-            <p class="text-left">• Escalation Management: Participated in high-stakes escalation conference calls, providing expert guidance to ensure timely and effective incident resolution.</p>
-            <p class="text-left">• SLA Adherence: Managed escalations and incidents in compliance with SLA requirements, prioritizing high-quality resolution and maximizing customer satisfaction.</p>
-            <p class="text-left">• Documentation and Knowledge Management: Created and reviewed comprehensive knowledge base articles and documentation, ensuring clarity, accuracy, and relevance for technical staff and management.</p>
-        </div>
-
-             <div class="container mt-4 p-0">
-        <!-- 3 Experience Section -->
         <div class="text-wrapper">
             <h4 class="text-black text-left">Microsoft Ireland</h4>
             <p class="text-large text-left">Service Reliability Engineer | 2015 - 2022</p>

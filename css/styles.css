@@ -1,13 +1,18 @@
-body {
-    padding-top: 56px;
-}
+<style>
+    .heading-large {
+        font-size: 3em; /* Larger font size for the heading */
+        font-weight: bold; /* Optional: make the heading bold */
+    }
 
-h1 {
-    color: #007bff;
-}
+    .text-large {
+        font-size: 1.5em; /* Larger font size for the paragraph text */
+    }
 
-.container {
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    padding: 20px;
-}
+    .text-wrapper {
+        padding: 15px; /* Padding inside the wrapper */
+        background-color: #f8f9fa; /* Background color for contrast */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        font-size: 1.5em; /* Adjust as needed */
+    }
+</style>
