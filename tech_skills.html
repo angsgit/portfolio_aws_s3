@@ -6,6 +6,17 @@
     <title>Tech Skills</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	 <style>
+        .icon-wrapper {
+            text-align: left;
+        }
+        .icon-wrapper i {
+            font-size: 40px; /* Adjust size as needed */
+            margin-right: 15px; /* Spacing between icons */
+        }
+    </style>
+	
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
     <style>
@@ -16,7 +27,11 @@
         .card-body {
             font-size: 1.2em;
         }
+		
+		
     </style>
+	
+	
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,6 +60,20 @@
   <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="40" height="40" style="vertical-align: middle;">
   GitHub Repository
   </a>
+  
+  <div class="container mt-4">
+    <div class="icon-wrapper" style="font-size: 24px; text-align: left;">
+        <i class="fab fa-aws" title="AWS" style="margin-right: 10px;"></i>
+        <i class="fab fa-kubernetes" title="Kubernetes" style="margin-right: 10px;"></i>
+        <i class="fab fa-python" title="Python"></i>
+		<i class="fab fa-kubernetes" title="kubernetes"></i>
+		  <i class="fab fa-docker" title="Docker"></i>
+            <i class="fab fa-windows" title="Windows"></i>
+            <i class="fab fa-linux" title="Linux"></i>
+			<i class="fab fa-jenkins"></i>
+			
+    </div>
+</div>
   
     <div class="container mt-4">
         <h2 class="mb-4 text-info">Technical Skills</h2>
@@ -103,7 +132,7 @@
                     </tr>
                     <tr>
                         <td><strong>Other</strong></td>
-                        <td>Networking, Active Directory, Firewalls (SonicWall),<br>Windows Servers, Exchange Server, Security (VPN, SSL, etc.), NAS</td>
+                        <td>Networking, Active Directory, Firewalls,<br>Windows Servers, Exchange Server, Security (VPN, SSL, etc.), NAS</td>
                     </tr>
                 </tbody>
             </table>
